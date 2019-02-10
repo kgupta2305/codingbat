@@ -1,0 +1,12 @@
+public int bigDiff(int[] nums) {
+  int max=0;
+  int min=nums[0];
+  for (int i=0;i<nums.length;i++){
+    if(max<nums[i]){
+      max = nums[i];
+    } else if(min>nums[i]){
+      min = nums[i];
+    }
+  }
+  return(max-min);
+}
